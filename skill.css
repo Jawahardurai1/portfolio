@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+header {
+  background: #161b22;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: #58a6ff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #e6edf3;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header ul li a.active,
+header ul li a:hover {
+  color: #58a6ff;
+}
+
+.skills-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.skills-section .title {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.skills-section .title span {
+  color: #58a6ff;
+}
+
+.skills-category {
+  margin: 40px auto;
+  text-align: left;
+  max-width: 800px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.skills-category h2 {
+  color: #58a6ff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill p {
+  margin: 0 0 6px 0;
+  font-size: 15px;
+}
+
+.progress {
+  background: #21262d;
+  border-radius: 12px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #58a6ff, #1f6feb);
+  border-radius: 12px;
+  transition: width 2s ease;
+}
+
+.resume-btn {
+  margin-top: 50px;
+}
+
+.resume-btn a {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #58a6ff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.resume-btn a:hover {
+  background: #1f6feb;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
